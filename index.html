@@ -7,17 +7,25 @@
     <title>Prajwal Devaraj's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Background with Gradient and Glow */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
             color: #e0e0e0;
             text-align: center;
+            overflow-x: hidden;
+            animation: gradientBG 10s ease infinite alternate;
         }
 
+        @keyframes gradientBG {
+            0% { background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); }
+            100% { background: linear-gradient(135deg, #0f3460, #16213e, #1a1a2e); }
+        }
+
+        /* Header and Profile */
         header {
-            background-color: #1e1e1e;
             padding: 30px 0;
         }
 
@@ -34,19 +42,21 @@
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid #ffffff;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
         }
 
         .profile-details h1 {
-            font-size: 36px;
+            font-size: 38px;
             font-weight: bold;
-            color: #ffffff; /* PURE WHITE */
-            margin: 15px 0;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
         .profile-details p {
             font-size: 18px;
-            color: #bbb;
+            color: #b3b3b3;
         }
 
         .profile-details a {
@@ -60,27 +70,30 @@
             text-decoration: underline;
         }
 
+        /* Info Section */
         .information {
-            background-color: #1e1e1e;
+            background: rgba(255, 255, 255, 0.1);
             padding: 40px;
             margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
         }
 
         .information h2 {
             font-size: 28px;
             color: #ffffff;
             margin-bottom: 15px;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
         }
 
         .information p {
             font-size: 18px;
-            color: #b3b3b3;
+            color: #e0e0e0;
             line-height: 1.8;
-            margin-bottom: 10px;
         }
 
+        /* Buttons with Hover Effects */
         .buttons {
             display: flex;
             flex-wrap: wrap;
@@ -89,7 +102,7 @@
         }
 
         .buttons button {
-            background: #5c6bc0;
+            background: linear-gradient(90deg, #5c6bc0, #3f4f80);
             color: white;
             border: none;
             padding: 15px 25px;
@@ -97,22 +110,25 @@
             cursor: pointer;
             font-size: 16px;
             border-radius: 8px;
-            transition: 0.3s;
+            transition: 0.3s ease-in-out;
             font-weight: bold;
-            box-shadow: 0 4px 8px rgba(92, 107, 192, 0.3);
+            box-shadow: 0 4px 10px rgba(92, 107, 192, 0.4);
         }
 
         .buttons button:hover {
-            background-color: #3f4f80;
-            transform: scale(1.05);
+            background: linear-gradient(90deg, #3f4f80, #5c6bc0);
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(92, 107, 192, 0.5);
         }
 
+        /* Footer */
         footer {
             text-align: center;
-            background-color: #1e1e1e;
-            color: white;
+            background: rgba(255, 255, 255, 0.1);
             padding: 15px 0;
             margin-top: 40px;
+            box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
         }
 
         footer a {
@@ -123,6 +139,7 @@
         footer a:hover {
             text-decoration: underline;
         }
+
     </style>
 </head>
 
@@ -142,7 +159,7 @@
             </div>
         </div>
     </header>
-
+   
     <div class="information">
         <h2>ABOUT ME</h2>
         <p>
@@ -172,3 +189,4 @@
 </body>
 
 </html>
+
