@@ -5,8 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prajwal Devaraj's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 5px solid #5c6bc0;
+        }
+
+        .profile-details h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #5c6bc0;
+        }
+
+        .profile-details p {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        .profile-details a {
+            color: #5c6bc0;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        .profile-details a:hover {
+            text-decoration: underline;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .buttons button {
+            background-color: #5c6bc0;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons button:hover {
+            background-color: #3f4f80;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #5c6bc0;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <div class="profile">
             <img src="img/prajwal.jpg" alt="Prajwal Devaraj" class="profile-img">
@@ -20,6 +117,7 @@
                 </p>
             </div>
         </div>
+
         <div class="buttons">
             <button onclick="window.location.href='about.html'">About Me</button>
             <button onclick="window.location.href='education.html'">Education</button>
@@ -29,8 +127,10 @@
             <button onclick="window.location.href='extra_curricular.html'">Extra Curricular Activities</button>
         </div>
     </header>
+
     <footer>
         <p>All rights reserved &copy; Prajwal Devaraj | <a href="mailto:prajuu2004@gmail.com">prajuu2004@gmail.com</a></p>
     </footer>
+
 </body>
 </html>
