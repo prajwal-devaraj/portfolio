@@ -7,123 +7,171 @@
     <title>Education - Prajwal Devaraj</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Background and General Styles */
+        /* Background with Gradient and Glow */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #f0f4f8, #d9e7f0);
-            color: #333;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: #e0e0e0;
             text-align: center;
+            overflow-x: hidden;
+            animation: gradientBG 10s ease infinite alternate;
             padding-bottom: 120px;
         }
 
-        /* Education Section Styling */
-        .education-section {
-            margin: 50px auto;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            max-width: 900px;
-            transition: all 0.3s ease;
-            animation: fadeIn 1s ease-out;
+        @keyframes gradientBG {
+            0% {
+                background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            }
+
+            100% {
+                background: linear-gradient(135deg, #0f3460, #16213e, #1a1a2e);
+            }
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
+        /* Header and Profile */
+        header {
+            padding: 30px 0;
+        }
 
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+
+        .profile-details h1 {
+            font-size: 38px;
+            font-weight: bold;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Updated link colors */
+        .profile-details a {
+            color: #ffffff !important;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 8px;
+        }
+
+        .profile-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Education Section */
+        .education-section {
+            margin-top: 50px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            max-width: 800px;
+            margin: 50px auto;
         }
 
         .education-section h2 {
             font-size: 32px;
-            color: #3a3a3a;
-            margin-bottom: 20px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #ffffff;
+            margin-bottom: 30px;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+            font-weight: bold;
         }
 
-        /* Educational Details */
         .education-section p {
             font-size: 18px;
+            color: #e0e0e0;
             line-height: 1.8;
-            color: #4a4a4a;
             margin-bottom: 20px;
         }
 
         .education-section .college a {
-            color: #4e77a0;
-            font-weight: bold;
+            color: #ffffff;
             text-decoration: none;
-            transition: color 0.3s ease;
+            font-weight: bold;
+            border-bottom: 2px solid #ffffff;
+            transition: color 0.3s ease, border-color 0.3s ease;
         }
 
         .education-section .college a:hover {
-            color: #ff6f61;
-            text-decoration: underline;
+            color: #ffd700;
+            border-color: #ffd700;
+        }
+
+        .details {
+            font-size: 16px;
+            color: #e0e0e0;
+            margin: 15px 0;
         }
 
         .details b {
-            font-weight: 600;
-            color: #333;
+            color: #ffffff;
         }
 
-        /* Add a separator line between education sections */
-        .education-section p + p {
-            border-top: 2px solid #f0f4f8;
-            padding-top: 20px;
-            margin-top: 20px;
+        .details a {
+            color: #ffffff;
+            text-decoration: none;
         }
 
-        /* Buttons Styling */
+        .details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Buttons with Hover Effects */
         .buttons {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
             margin-top: 40px;
         }
 
         .buttons button {
-            background: linear-gradient(90deg, #ff6f61, #ff9e9d);
+            background: linear-gradient(90deg, #5c6bc0, #3f4f80);
             color: white;
             border: none;
-            padding: 15px 30px;
-            font-size: 16px;
-            border-radius: 50px;
+            padding: 15px 25px;
+            margin: 10px;
             cursor: pointer;
-            box-shadow: 0 8px 15px rgba(255, 111, 97, 0.2);
-            transition: 0.3s ease;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
             font-weight: bold;
-            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(92, 107, 192, 0.4);
         }
 
         .buttons button:hover {
-            background: linear-gradient(90deg, #ff9e9d, #ff6f61);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(255, 111, 97, 0.3);
+            background: linear-gradient(90deg, #3f4f80, #5c6bc0);
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(92, 107, 192, 0.5);
         }
 
-        /* Footer Styling */
+        /* Footer */
         footer {
-            background: #ff6f61;
-            color: white;
-            padding: 15px 0;
             text-align: center;
-            font-size: 14px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 0;
+            margin-top: 60px;
+            box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
         }
 
+        footer p,
         footer a {
-            color: white;
-            text-decoration: none;
+            color: #ffffff !important;
         }
 
         footer a:hover {
@@ -134,15 +182,30 @@
 
 <body>
 
+    <header>
+        <div class="profile">
+            <img src="img/prajwal.jpg" alt="Prajwal Devaraj" class="profile-img">
+            <div class="profile-details">
+                <h1>PRAJWAL DEVARAJ PORTFOLIO</h1>
+                <p>
+                    <a href="mailto:prajuu2004@gmail.com">prajuu2004@gmail.com</a> |
+                    <a href="https://www.linkedin.com/in/prajuu2001/">LinkedIn</a> |
+                    <a href="https://github.com/prajwaldevaraj-2001">GitHub</a> |
+                    <a href="https://prajwaldevaraj-2001.github.io/portfolio/">Portfolio</a>
+                </p>
+            </div>
+        </div>
+    </header>
+
     <div class="education-section">
         <h2>EDUCATION</h2>
 
-        <p><b>Master of Science in Computer Science</b><br>
+        <p><b>Master of Science in Computer Science</b><br> 
             <span>Start: August 2025 - End: May 2026</span><br>
             <div class="college"><a href="https://www.kent.edu/">Kent State University, Ohio, USA</a></div><br>
             <div class="details">
-                <b>GPA:</b> 4/4<br>
-                <b>Coursework:</b> <b>Advanced Database Systems Design</b>, <b>Data Mining</b>, <b>AI and Machine Learning</b>, <b>IoT Integration</b>
+                GPA: 4/4<br>
+                Coursework: <b>Advanced Database Systems Design</b>, <b>Data Mining</b>, <b>AI and Machine Learning</b>, <b>IoT Integration</b>
             </div>
         </p>
 
@@ -150,9 +213,9 @@
             <span>Start: August 2019 - End: June 2023</span><br>
             <div class="college"><a href="https://jssateb.ac.in/">JSS Academy of Technical Education, Bangalore, India</a></div><br>
             <div class="details">
-                <b>VTU Board</b> - <a href="https://vtu.ac.in/">Visvesvaraya Technological University (VTU)</a><br>
-                <b>CGPA:</b> 8.25/10<br>
-                <b>Coursework:</b> <b>Data Structures and Algorithms</b>, <b>Big Data Analytics</b>, <b>Web Development</b>, <b>Software Engineering</b>
+                VTU Board - <a href="https://vtu.ac.in/">Visvesvaraya Technological University (VTU)</a><br>
+                CGPA: 8.25/10<br>
+                Coursework: <b>Data Structures and Algorithms</b>, <b>Big Data Analytics</b>, <b>Web Development</b>, <b>Software Engineering</b>
             </div>
         </p>
     </div>
