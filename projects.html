@@ -1,21 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Prajwal Devaraj</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Courses - Prajwal Devaraj</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Background with Gradient and Glow */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: #e0e0e0;
+            text-align: center;
+            overflow-x: hidden;
+            animation: gradientBG 10s ease infinite alternate;
+            padding-bottom: 120px;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            }
+
+            100% {
+                background: linear-gradient(135deg, #0f3460, #16213e, #1a1a2e);
+            }
+        }
+
+        /* Header and Profile */
+        header {
+            padding: 30px 0;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+
+        .profile-details h1 {
+            font-size: 38px;
+            font-weight: bold;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Updated link colors */
+        .profile-details a {
+            color: #ffffff !important;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 8px;
+        }
+
+        .profile-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Updated link colors */
+        a {
+            color: #ffffff !important;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Courses Section */
+        .courses-section, .projects-section {
+            margin-top: 50px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .courses-section h3, .projects-section h3 {
+            font-size: 32px;
+            color: #ffffff;
+            margin-bottom: 30px;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+            font-weight: bold;
+        }
+
+        .courses-section p, .projects-section p {
+            font-size: 18px;
+            color: #e0e0e0;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .details {
+            font-size: 18px;
+            color: #e0e0e0;
+            margin: 15px 0;
+        }
+
+        .details b {
+            color: #ffffff;
+        }
+
+        .details a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Buttons with Hover Effects */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .buttons button {
+            background: linear-gradient(90deg, #5c6bc0, #3f4f80);
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(92, 107, 192, 0.4);
+        }
+
+        .buttons button:hover {
+            background: linear-gradient(90deg, #3f4f80, #5c6bc0);
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(92, 107, 192, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 0;
+            margin-top: 60px;
+            box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+        }
+
+        footer p,
+        footer a {
+            color: #ffffff !important;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
+
 <body>
+
     <header>
-        <h1>Projects</h1>
-        <p><strong>Real-Time Inventory Management System:</strong> Built using MongoDB, Flask, and WebSockets for real-time tracking and alerts.</p>
-        <p><strong>AI-Powered Smart Kitchen Assistant:</strong> Developed as part of a team, integrating IoT, AI, and computer vision for smarter kitchens.</p>
-        <button><a href="index.html">Back to Dashboard</a></button>
+        <div class="profile">
+            <img src="img/prajwal.jpg" alt="Prajwal Devaraj" class="profile-img">
+            <div class="profile-details">
+                <h1>PRAJWAL DEVARAJ COURSES</h1>
+                <p>
+                    <a href="mailto:prajuu2004@gmail.com">prajuu2004@gmail.com</a> |
+                    <a href="https://www.linkedin.com/in/prajuu2001/">LinkedIn</a> |
+                    <a href="https://github.com/prajwaldevaraj-2001">GitHub</a> |
+                    <a href="https://prajwaldevaraj-2001.github.io/portfolio/">Portfolio</a>
+                </p>
+            </div>
+        </div>
     </header>
 
+    <!-- Courses Section -->
+    <div class="courses-section">
+        <h3>Full Stack Web Development | <a href="http://technofly.in/">Technofly Solutions</a></h3>
+        <p>Bangalore, Karnataka, India – Aug 2022</p>
+        <p>Enhanced skills in front-end development using HTML, CSS, and JavaScript.</p>
+        <p>Focused on server-side development with Python and integrated databases to build scalable applications.</p>
+        <p>Collaborated in a team environment, following best practices for web security and application performance.</p>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects-section">
+        <h3>DeepWalk: Online Learning of Social Representations | <a href="https://github.com/prajwaldevaraj-2001/DeepWalk">GitHub Repository</a></h3>
+        <p>Aug 2024 - Dec 2024 | Associated with Kent State University</p>
+        <p>• Explored the DeepWalk algorithm for learning latent representations of nodes in a graph through truncated random walks and a skip-gram model.</p>
+        <p>• Analyzed graph embedding generation, scalability, and its applications in social networks, including node classification, link prediction, and community detection.</p>
+        <p>• Compared DeepWalk with other graph embedding methods like Node2Vec.</p>
+    </div>
+
+    <div class="projects-section">
+        <h3>MOOC User Action Data Analysis | <a href="https://github.com/prajwaldevaraj-2001/MOOC-Analysis">GitHub Repository</a></h3>
+        <p>Aug 2024 - Dec 2024 | Associated with Kent State University</p>
+        <p>• Analyzed user action data from Stanford SNAP's MOOC dataset using Python and Tableau.</p>
+        <p>• Generated actionable insights on user behavior, course engagement, and completion rates.</p>
+        <p>• Designed interactive dashboards to visualize trends and key performance indicators.</p>
+    </div>
+
+    <div class="projects-section">
+        <h3>Real-Time Inventory Management System | <a href="https://github.com/prajwaldevaraj-2001/Inventory-Management-System">GitHub Repository</a></h3>
+        <p>Aug 2024 - Dec 2024 | Associated with Kent State University</p>
+        <p>• Developed a real-time inventory management system using MongoDB, Flask, and WebSocket.</p>
+        <p>• Implemented automated alerts for low stock, dynamic dashboard interfaces, and CRUD functionalities for product management.</p>
+        <p>• Designed user-friendly web pages for adding, updating, viewing, and deleting products with password validation and responsive layouts.</p>
+    </div>
+
+    <div class="projects-section">
+        <h3>Integrated System for Fire Detection, Animal Monitoring, and Smuggling Prevention</h3>
+        <p>Aug 2022 - May 2023 | Associated with JSS Academy of Technical Education</p>
+        <p>• Designed and implemented an IoT-based system with sensors for fire detection, animal monitoring, and preventing wildlife smuggling.</p>
+        <p>• Integrated data collection with real-time monitoring via a web interface and a database for storing and analyzing sensor data.</p>
+    </div>
+
     <footer>
-        <p>Contact: prajuu2004@gmail.com</p>
+        <p>&copy; 2025 Prajwal Devaraj. All Rights Reserved. | <a href="https://www.kent.edu/">Kent State University</a></p>
     </footer>
+
+        <div class="buttons">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='education.html'">Education</button>
+        <button onclick="window.location.href='experience.html'">Experience</button>
+        <button onclick="window.location.href='skills.html'">Skills</button>
+        <button onclick="window.location.href='courses.html'">Courses</button>
+        <button onclick="window.location.href='extra_curricular.html'">Extra Curricular Activities</button>
+    </div>
+
 </body>
+
 </html>
