@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-            color: white; /* Ensures all text is white */
+            color: white !important; /* Makes all text white */
             text-align: center;
             overflow-x: hidden;
             animation: gradientBG 10s ease infinite alternate;
@@ -22,16 +22,14 @@
             100% { background: linear-gradient(135deg, #0f3460, #16213e, #1a1a2e); }
         }
 
-        /* Header and Profile */
-        header {
-            padding: 30px 0;
+        /* Ensure all text is white */
+        h1, h2, h3, p, a, span {
+            color: white !important;
         }
 
-        .profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
+        /* Header */
+        header {
+            padding: 30px 0;
         }
 
         .profile-img {
@@ -46,20 +44,19 @@
         .profile-details h1 {
             font-size: 38px;
             font-weight: bold;
-            color: #ffffff;
             text-transform: uppercase;
             letter-spacing: 2px;
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
-        .profile-details a {
-            color: #ffffff !important;  
+        .links a {
+            color: white !important;
             text-decoration: none;
             font-size: 18px;
             margin: 0 8px;
         }
 
-        .profile-details a:hover {
+        .links a:hover {
             text-decoration: underline;
         }
 
@@ -73,17 +70,13 @@
             backdrop-filter: blur(8px);
         }
 
-        .information h2, .information h3, .information p {
-            color: white;
-        }
-
         /* Buttons */
         .buttons {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 20px;
-            margin-bottom: 80px; /* Space before footer */
+            margin-bottom: 80px;
         }
 
         .buttons button {
@@ -106,18 +99,6 @@
             box-shadow: 0 6px 15px rgba(92, 107, 192, 0.5);
         }
 
-        /* Responsive buttons */
-        @media (max-width: 768px) {
-            .buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .buttons button {
-                width: 90%;
-            }
-        }
-
         /* Footer */
         footer {
             background-color: black;
@@ -125,13 +106,13 @@
             text-align: center;
             padding: 15px 0;
             width: 100%;
-            position: relative; /* Changed from fixed to relative */
+            position: relative;
             bottom: 0;
-            margin-top: 40px; /* Space between last section and footer */
+            margin-top: 40px;
         }
 
         footer a {
-            color: white;
+            color: white !important;
             text-decoration: none;
         }
 
