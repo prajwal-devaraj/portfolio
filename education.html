@@ -7,93 +7,166 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            font-family: Arial, sans-serif;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: #e0e0e0;
+            text-align: center;
+            overflow-x: hidden;
+            animation: gradientBG 10s ease infinite alternate;
+        }
+
+        @keyframes gradientBG {
+            0% { background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); }
+            100% { background: linear-gradient(135deg, #0f3460, #16213e, #1a1a2e); }
+        }
+
+        /* Header and Profile */
+        header {
+            padding: 30px 0;
         }
 
         .profile {
-            text-align: center;
-            background-color: black;
-            color: white;
-            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
         }
 
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
         }
 
-        .links {
-            text-align: center;
-            margin-top: 10px;
+        .profile-details h1 {
+            font-size: 38px;
+            font-weight: bold;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
-        .links a {
-            margin: 0 10px;
+        /* Updated link colors */
+        .profile-details a {
+            color: #ffffff !important;  /* White text */
             text-decoration: none;
-            color: white;
+            font-size: 18px;
+            margin: 0 8px;
         }
 
+        .profile-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Info Section */
+        .information {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+        }
+
+        .information h2 {
+            font-size: 28px;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+        }
+
+        .information p {
+            font-size: 18px;
+            color: #e0e0e0;
+            line-height: 1.8;
+        }
+
+        /* Buttons with Hover Effects */
         .buttons {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 20px;
-            margin-bottom: 80px; /* Space for the fixed footer */
         }
 
         .buttons button {
-            margin: 5px;
-            padding: 10px 15px;
-            font-size: 16px;
-            border: none;
-            background-color: #007bff;
+            background: linear-gradient(90deg, #5c6bc0, #3f4f80);
             color: white;
+            border: none;
+            padding: 15px 25px;
+            margin: 10px;
             cursor: pointer;
-            border-radius: 5px;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(92, 107, 192, 0.4);
         }
 
         .buttons button:hover {
-            background-color: #0056b3;
+            background: linear-gradient(90deg, #3f4f80, #5c6bc0);
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(92, 107, 192, 0.5);
         }
 
-        section {
-            flex-grow: 1;
-            padding: 20px;
+        /* Ensure buttons are visible on mobile */
+        @media (max-width: 768px) {
+            .buttons {
+                flex-direction: column;  /* Stack buttons */
+                align-items: center;     /* Center them */
+            }
+            
+            .buttons button {
+                width: 90%;              /* Make buttons full-width */
+            }
         }
 
+        /* Footer */
         footer {
-            background-color: black;
-            color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 0;
+            margin-top: 40px;
+            box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
         }
+
+        /* Ensure footer text is white */
+        footer p, footer a {
+            color: #ffffff !important;  /* White text */
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
+
 <body>
+
     <header>
         <div class="profile">
             <img src="img/prajwal.jpg" alt="Prajwal Devaraj" class="profile-img">
             <div class="profile-details">
                 <h1>PRAJWAL DEVARAJ PORTFOLIO</h1>
-            </div>
-            <div class="links">
-                <a href="mailto:prajuu2004@gmail.com">prajuu2004@gmail.com</a> |
-                <a href="https://www.linkedin.com/in/prajuu2001/">LinkedIn</a> |
-                <a href="https://github.com/prajwaldevaraj-2001">GitHub</a> |
-                <a href="https://prajwaldevaraj-2001.github.io/portfolio/">Portfolio</a>
+                <p>
+                    <a href="mailto:prajuu2004@gmail.com">prajuu2004@gmail.com</a> |
+                    <a href="https://www.linkedin.com/in/prajuu2001/">LinkedIn</a> |
+                    <a href="https://github.com/prajwaldevaraj-2001">GitHub</a> |
+                    <a href="https://prajwaldevaraj-2001.github.io/portfolio/">Portfolio</a>
+                </p>
             </div>
         </div>
     </header>
-
-    <section>
+   
+    <div class="information">
         <h2>EDUCATION</h2>
         <h3>Master of Science in Computer Science</h3>
         <p>Start: August 2025 | End: May 2026</p>
@@ -106,9 +179,9 @@
         <p>University: <a href="https://jssateb.ac.in/">JSS Academy of Technical Education, Bangalore, India</a></p>
         <p>CGPA: 8.25/10</p>
         <p>Coursework: Data Structures and Algorithms, Big Data Analytics, Web Development, and Software Engineering</p>
-    </section>
+    </div>
 
-    <div class="buttons">
+   <div class="buttons">
         <button onclick="window.location.href='about.html'">About Me</button>
         <button onclick="window.location.href='experience.html'">Experience</button>
         <button onclick="window.location.href='skills.html'">Skills</button>
@@ -120,5 +193,7 @@
     <footer>
         <p>All rights reserved &copy; Prajwal Devaraj | <a href="mailto:prajuu2004@gmail.com" style="color: white;">prajuu2004@gmail.com</a></p>
     </footer>
+
 </body>
+
 </html>
