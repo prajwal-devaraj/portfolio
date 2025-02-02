@@ -1,49 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience - Prajwal Devaraj</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Background with Gradient and Glow */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: #e0e0e0;
+            text-align: center;
+            overflow-x: hidden;
+            animation: gradientBG 10s ease infinite alternate;
+            padding-bottom: 120px;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            }
+
+            100% {
+                background: linear-gradient(135deg, #0f3460, #16213e, #1a1a2e);
+            }
+        }
+
+        /* Header and Profile */
+        header {
+            padding: 30px 0;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+
+        .profile-details h1 {
+            font-size: 38px;
+            font-weight: bold;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Updated link colors */
+        .profile-details a {
+            color: #ffffff !important;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 8px;
+        }
+
+        .profile-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Experience Section */
+        .experience-section {
+            margin-top: 50px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .experience-section h3 {
+            font-size: 32px;
+            color: #ffffff;
+            margin-bottom: 30px;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+            font-weight: bold;
+        }
+
+        .experience-section p {
+            font-size: 18px;
+            color: #e0e0e0;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .experience-section .company a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid #ffffff;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .experience-section .company a:hover {
+            color: #ffd700;
+            border-color: #ffd700;
+        }
+
+        .details {
+            font-size: 18px;
+            color: #e0e0e0;
+            margin: 15px 0;
+        }
+
+        .details b {
+            color: #ffffff;
+        }
+
+        .details a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Buttons with Hover Effects */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .buttons button {
+            background: linear-gradient(90deg, #5c6bc0, #3f4f80);
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(92, 107, 192, 0.4);
+        }
+
+        .buttons button:hover {
+            background: linear-gradient(90deg, #3f4f80, #5c6bc0);
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(92, 107, 192, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 0;
+            margin-top: 60px;
+            box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+        }
+
+        footer p,
+        footer a {
+            color: #ffffff !important;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
+
 <body>
+
     <header>
         <div class="profile">
             <img src="img/prajwal.jpg" alt="Prajwal Devaraj" class="profile-img">
             <div class="profile-details">
-                <h1>Prajwal Devaraj</h1>
+                <h1>PRAJWAL DEVARAJ EXPERIENCE</h1>
+                <p>
+                    <a href="mailto:prajuu2004@gmail.com">prajuu2004@gmail.com</a> |
+                    <a href="https://www.linkedin.com/in/prajuu2001/">LinkedIn</a> |
+                    <a href="https://github.com/prajwaldevaraj-2001">GitHub</a> |
+                    <a href="https://prajwaldevaraj-2001.github.io/portfolio/">Portfolio</a>
+                </p>
             </div>
-        </div>
-        <div class="buttons">
-            <button onclick="window.location.href='index.html'">Back to Dashboard</button>
-            <button onclick="window.location.href='education.html'">Education</button>
-            <button onclick="window.location.href='about.html'">About Me</button>
-            <button onclick="window.location.href='skills.html'">Skills</button>
-            <button onclick="window.location.href='projects.html'">Projects</button>
-            <button onclick="window.location.href='extra_curricular.html'">Extra Curricular Activities</button>
         </div>
     </header>
 
-    <section>
-        <h2>Experience</h2>
-        <h3>Administrator | Sri Guruvandana Global Pre-School, Bangalore, India</h3>
-        <p><strong>March 2020 – July 2023</strong></p>
-        <ul>
-            <li>Managed school operations, improving efficiency by 20%.</li>
-            <li>Facilitated communication with parents and coordinated educational programs, enhancing parent satisfaction by 15%.</li>
-            <li>Ensured high educational standards, boosting student performance by 10%.</li>
-        </ul>
+    <div class="experience-section">
+        <h3>STUDENT EMPLOYEE</h3>
+        <p><b>Commerce Café, Kent State University, Kent, OH, USA</b><br>
+            Aug 2024 – Present<br>
+            • Managed daily operations at the campus café while balancing academic commitments.<br>
+            • Assisted in providing excellent customer service, ensuring smooth operations during peak hours.<br>
+            • Developed time management, problem-solving, and multitasking skills in a fast-paced environment.</p>
+    </div>
 
-        <h3>Full-Stack Developer Intern | BETSOL, Bangalore, India</h3>
-        <p><strong>May 2022 – December 2022</strong></p>
-        <ul>
-            <li>Developed web applications and performed data analysis tasks using Python, Flask, MongoDB, and SQL.</li>
-            <li>Implemented front-end interfaces and back-end functionalities, leading to a 25% reduction in development time.</li>
-        </ul>
-    </section>
+    <div class="experience-section">
+        <h3>STUDENT EMPLOYEE</h3>
+        <p><b>Kent University Bookstore, Kent State University, Kent, OH, USA</b><br>
+            Aug 2024 - Present<br>
+            • Worked in the textbook section, handling unwrapping and organizing newly delivered items for display.<br>
+            • Assisted with packing and preparing items for customer delivery.<br>
+            • Provided customer service on the sales floor, guiding customers and assisting with product inquiries.<br>
+            • Maintained a clean and organized store environment and managed high-traffic periods.</p>
+    </div>
+    
+    <div class="experience-section">
+        <h3>ADMINISTRATOR</h3>
+        <p><b>Sri Guruvandana Global Pre-School, Bangalore, Karnataka, India</b><br>
+            Mar 2020 – Jul 2023<br>
+            • Managed school operations, including admissions, event planning, and curriculum development, improving efficiency by 20%.<br>
+            • Facilitated communication with parents and coordinated educational programs, enhancing parent satisfaction by 15%.<br>
+            • Ensured a high standard of education through curriculum oversight and teacher coordination, boosting student performance by 10%.</p>
+    </div>
+
+    <div class="experience-section">
+        <h3>FULL-STACK DEVELOPER INTERN</h3>
+        <p><b>BETSOL, Bangalore, Karnataka, India</b><br>
+            May 2022 – Dec 2022<br>
+            • Participated in a workshop focused on full-stack development, improving proficiency by 30%.<br>
+            • Gained hands-on experience in front-end and back-end development, developing 100% functional web applications.<br>
+            • Developed and deployed web applications, reducing deployment time by 20%.</p>
+    </div>
+
+    <div class="experience-section">
+        <h3>FULL-STACK DEVELOPER INTERN</h3>
+        <p><b>Technofly Solutions, Bangalore, Karnataka, India</b><br>
+            Aug 2022 – Sep 2022<br>
+            • Gained proficiency in front-end (HTML, CSS, JavaScript) and back-end (Python, databases) technologies, increasing coding speed by 25%.<br>
+            • Contributed to the development of responsive, secure, and scalable web applications, improving scalability by 15%.<br>
+            • Collaborated with a team to implement modern web development practices, boosting project delivery efficiency by 20%.</p>
+    </div>
+
+    <div class="experience-section">
+        <h3>TEACHER TRAINING INTERN</h3>
+        <p><b>Edsmart Edu Services Pvt Ltd, Bangalore, Karnataka, India</b><br>
+            May 2022<br>
+            • Designed and optimized educational programs aligned with modern pedagogical standards, enhancing program effectiveness by 15%.<br>
+            • Collaborated with educators to create age-appropriate course content, improving student engagement by 10%.<br>
+            • Conducted research on innovative teaching methodologies, increasing teaching effectiveness by 12%.</p>
+    </div>
+
+    <div class="buttons">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='education.html'">Education</button>
+        <button onclick="window.location.href='skills.html'">Skills</button>
+        <button onclick="window.location.href='projects.html'">Projects</button>
+        <button onclick="window.location.href='extra_curricular.html'">Extra Curricular Activities</button>
+    </div>
 
     <footer>
         <p>All rights reserved &copy; Prajwal Devaraj | <a href="mailto:prajuu2004@gmail.com">prajuu2004@gmail.com</a></p>
     </footer>
+
 </body>
+
 </html>
