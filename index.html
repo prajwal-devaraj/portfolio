@@ -54,13 +54,9 @@
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
-        .profile-details p {
-            font-size: 18px;
-            color: #b3b3b3;
-        }
-
+        /* Updated link colors */
         .profile-details a {
-            color: #5c6bc0;
+            color: #ffffff !important;  /* White text */
             text-decoration: none;
             font-size: 18px;
             margin: 0 8px;
@@ -121,6 +117,18 @@
             box-shadow: 0 6px 15px rgba(92, 107, 192, 0.5);
         }
 
+        /* Ensure buttons are visible on mobile */
+        @media (max-width: 768px) {
+            .buttons {
+                flex-direction: column;  /* Stack buttons */
+                align-items: center;     /* Center them */
+            }
+            
+            .buttons button {
+                width: 90%;              /* Make buttons full-width */
+            }
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -131,9 +139,9 @@
             backdrop-filter: blur(8px);
         }
 
-        footer a {
-            color: #5c6bc0;
-            text-decoration: none;
+        /* Ensure footer text is white */
+        footer p, footer a {
+            color: #ffffff !important;  /* White text */
         }
 
         footer a:hover {
@@ -189,4 +197,3 @@
 </body>
 
 </html>
-
