@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Curricular Activities - Prajwal Devaraj</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Background with Gradient and Glow */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: #e0e0e0;
+            text-align: center;
+            overflow-x: hidden;
+            animation: gradientBG 10s ease infinite alternate;
+            padding-bottom: 120px;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            }
+
+            100% {
+                background: linear-gradient(135deg, #0f3460, #16213e, #1a1a2e);
+            }
+        }
+
+        /* Header and Profile */
+        header {
+            padding: 30px 0;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+
+        .profile-details h1 {
+            font-size: 38px;
+            font-weight: bold;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Extra Curricular Section */
+        .activities-section {
+            margin-top: 50px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .activities-section h3 {
+            font-size: 32px;
+            color: #ffffff;
+            margin-bottom: 30px;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+            font-weight: bold;
+        }
+
+        .activities-section p {
+            font-size: 18px;
+            color: #e0e0e0;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons with Hover Effects */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .buttons button {
+            background: linear-gradient(90deg, #5c6bc0, #3f4f80);
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(92, 107, 192, 0.4);
+        }
+
+        .buttons button:hover {
+            background: linear-gradient(90deg, #3f4f80, #5c6bc0);
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(92, 107, 192, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 0;
+            margin-top: 60px;
+            box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+        }
+
+        footer p,
+        footer a {
+            color: #ffffff !important;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="profile">
+            <img src="img/prajwal.jpg" alt="Prajwal Devaraj" class="profile-img">
+            <div class="profile-details">
+                <h1>PRAJWAL DEVARAJ EXTRA CURRICULAR ACTIVITIES</h1>
+                <p>
+                    <a href="mailto:prajuu2004@gmail.com">prajuu2004@gmail.com</a> |
+                    <a href="https://www.linkedin.com/in/prajuu2001/">LinkedIn</a> |
+                    <a href="https://github.com/prajwaldevaraj-2001">GitHub</a> |
+                    <a href="https://prajwaldevaraj-2001.github.io/portfolio/">Portfolio</a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <div class="activities-section">
+        <h3>Kent India Association, Kent State University</h3>
+        <p>Student Coordinator for Tech-Labs, Collaborating IT Project, Sudo Club (Technical Club) and Debate Team</p>
+        <p><b>2024 - 2026</b></p>
+    </div>
+
+    <div class="activities-section">
+        <h3>Sudo Club (Technical Club) & Debate Team, JSS Academy of Technical Education</h3>
+        <p>Student Coordinator for Tech-Labs, Collaborating IT Project</p>
+        <p><b>2020 – 2023</b></p>
+    </div>
+
+    <div class="activities-section">
+        <h3>Marketing Team Member, JSS VERVE Cultural Fest</h3>
+        <p><b>2022 - 2023</b></p>
+    </div>
+
+    <div class="activities-section">
+        <h3>Campus Ambassador, JSS Academy of Technical Education</h3>
+        <p><b>2021</b></p>
+    </div>
+
+    <div class="activities-section">
+        <h3>Awarded Mr. Talented, JSS Academy of Technical Education</h3>
+        <p><b>2020</b></p>
+    </div>
+
+    <div class="buttons">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='education.html'">Education</button>
+        <button onclick="window.location.href='experience.html'">Experience</button>
+        <button onclick="window.location.href='skills.html'">Skills</button> 
+        <button onclick="window.location.href='courses.html'">Courses</button>
+        <button onclick="window.location.href='projects.html'">Projects</button>
+    </div>
+
+    <footer>
+        <p>All rights reserved &copy; Prajwal Devaraj | <a href="mailto:prajuu2004@gmail.com">prajuu2004@gmail.com</a></p>
+    </footer>
+
+</body>
+
+</html>
 
