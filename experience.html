@@ -61,6 +61,18 @@
         }
 
         /* Updated link colors */
+        .profile-details a {
+            color: #ffffff !important;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 8px;
+        }
+
+        .profile-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Updated link colors */
         a {
             color: #ffffff !important;
             text-decoration: none;
@@ -129,7 +141,7 @@
             text-decoration: underline;
         }
 
-        /* Buttons (No Changes Made) */
+        /* Buttons with Hover Effects */
         .buttons {
             display: flex;
             justify-content: center;
@@ -139,17 +151,22 @@
         }
 
         .buttons button {
-            background-color: #4CAF50; /* Green */
+            background: linear-gradient(90deg, #5c6bc0, #3f4f80);
             color: white;
             border: none;
             padding: 15px 25px;
             cursor: pointer;
             font-size: 16px;
             border-radius: 8px;
+            transition: 0.3s ease-in-out;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(92, 107, 192, 0.4);
         }
 
         .buttons button:hover {
-            background-color: #45a049;
+            background: linear-gradient(90deg, #3f4f80, #5c6bc0);
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(92, 107, 192, 0.5);
         }
 
         /* Footer */
@@ -248,12 +265,17 @@
 
     <div class="buttons">
         <button onclick="window.location.href='index.html'">Home</button>
-        <button onclick="window.location.href='contact.html'">Contact</button>
+        <button onclick="window.location.href='education.html'">Education</button>
+        <button onclick="window.location.href='skills.html'">Skills</button>
+        <button onclick="window.location.href='projects.html'">Projects</button>
+        <button onclick="window.location.href='extra_curricular.html'">Extra Curricular Activities</button>
     </div>
 
     <footer>
-        <p>&copy; 2024 Prajwal Devaraj | All rights reserved</p>
+        <p>All rights reserved &copy; Prajwal Devaraj | <a href="mailto:prajuu2004@gmail.com">prajuu2004@gmail.com</a></p>
     </footer>
+
 </body>
 
 </html>
+
