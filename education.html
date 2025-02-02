@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-            color: #e0e0e0;
+            color: white; /* Ensures all text is white */
             text-align: center;
             overflow-x: hidden;
             animation: gradientBG 10s ease infinite alternate;
@@ -52,9 +52,8 @@
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
-        /* Updated link colors */
         .profile-details a {
-            color: #ffffff !important;  /* White text */
+            color: #ffffff !important;  
             text-decoration: none;
             font-size: 18px;
             margin: 0 8px;
@@ -74,25 +73,17 @@
             backdrop-filter: blur(8px);
         }
 
-        .information h2 {
-            font-size: 28px;
-            color: #ffffff;
-            margin-bottom: 15px;
-            text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+        .information h2, .information h3, .information p {
+            color: white;
         }
 
-        .information p {
-            font-size: 18px;
-            color: #e0e0e0;
-            line-height: 1.8;
-        }
-
-        /* Buttons with Hover Effects */
+        /* Buttons */
         .buttons {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 20px;
+            margin-bottom: 80px; /* Space before footer */
         }
 
         .buttons button {
@@ -115,15 +106,15 @@
             box-shadow: 0 6px 15px rgba(92, 107, 192, 0.5);
         }
 
-        /* Ensure buttons are visible on mobile */
+        /* Responsive buttons */
         @media (max-width: 768px) {
             .buttons {
-                flex-direction: column;  /* Stack buttons */
-                align-items: center;     /* Center them */
+                flex-direction: column;
+                align-items: center;
             }
             
             .buttons button {
-                width: 90%;              /* Make buttons full-width */
+                width: 90%;
             }
         }
 
@@ -132,12 +123,21 @@
             background-color: black;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
+            padding: 15px 0;
             width: 100%;
+            position: relative; /* Changed from fixed to relative */
+            bottom: 0;
+            margin-top: 40px; /* Space between last section and footer */
         }
 
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -173,7 +173,7 @@
         <p>Coursework: Data Structures and Algorithms, Big Data Analytics, Web Development, and Software Engineering</p>
     </div>
 
-   <div class="buttons">
+    <div class="buttons">
         <button onclick="window.location.href='about.html'">About Me</button>
         <button onclick="window.location.href='experience.html'">Experience</button>
         <button onclick="window.location.href='skills.html'">Skills</button>
@@ -183,9 +183,10 @@
     </div>
 
     <footer>
-        <p>All rights reserved &copy; Prajwal Devaraj | <a href="mailto:prajuu2004@gmail.com" style="color: white;">prajuu2004@gmail.com</a></p>
+        <p>All rights reserved &copy; Prajwal Devaraj | 
+            <a href="mailto:prajuu2004@gmail.com">prajuu2004@gmail.com</a>
+        </p>
     </footer>
 
 </body>
-
 </html>
