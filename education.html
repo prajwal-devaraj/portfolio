@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prajwal Devaraj's Education</title>
+    <title>Education - Prajwal Devaraj</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* Background with Gradient and Glow */
@@ -21,8 +21,13 @@
         }
 
         @keyframes gradientBG {
-            0% { background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); }
-            100% { background: linear-gradient(135deg, #0f3460, #16213e, #1a1a2e); }
+            0% {
+                background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            }
+
+            100% {
+                background: linear-gradient(135deg, #0f3460, #16213e, #1a1a2e);
+            }
         }
 
         /* Header and Profile */
@@ -57,7 +62,7 @@
 
         /* Updated link colors */
         .profile-details a {
-            color: #ffffff !important;  /* White text */
+            color: #ffffff !important;
             text-decoration: none;
             font-size: 18px;
             margin: 0 8px;
@@ -68,40 +73,55 @@
         }
 
         /* Education Section */
-        .education {
-            background: rgba(255, 255, 255, 0.1);
+        .education-section {
+            margin-top: 50px;
             padding: 40px;
-            margin: 20px;
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(8px);
         }
 
-        .education h2 {
+        .education-section h2 {
             font-size: 28px;
             color: #ffffff;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
         }
 
-        .education .degree {
-            font-size: 22px;
-            font-weight: bold;
-            color: #ffffff;
-            margin-bottom: 10px;
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
-        }
-
-        .education .college {
+        .education-section p {
             font-size: 18px;
             color: #e0e0e0;
+            line-height: 1.8;
         }
 
-        .education .details {
+        .education-section .college a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .education-section .college a:hover {
+            text-decoration: underline;
+        }
+
+        .details {
             font-size: 16px;
             color: #e0e0e0;
-            line-height: 1.8;
-            margin-bottom: 20px;
+            margin: 15px 0;
+        }
+
+        .details b {
+            color: #ffffff;
+        }
+
+        .details a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .details a:hover {
+            text-decoration: underline;
         }
 
         /* Buttons with Hover Effects */
@@ -135,12 +155,12 @@
         /* Ensure buttons are visible on mobile */
         @media (max-width: 768px) {
             .buttons {
-                flex-direction: column;  /* Stack buttons */
-                align-items: center;     /* Center them */
+                flex-direction: column;
+                align-items: center;
             }
 
             .buttons button {
-                width: 90%;              /* Make buttons full-width */
+                width: 90%;
             }
         }
 
@@ -149,20 +169,19 @@
             text-align: center;
             background: rgba(255, 255, 255, 0.1);
             padding: 15px 0;
-            margin-top: 60px;  /* Increased space between content and footer */
+            margin-top: 60px;
             box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(8px);
         }
 
-        /* Ensure footer text is white */
-        footer p, footer a {
-            color: #ffffff !important;  /* White text */
+        footer p,
+        footer a {
+            color: #ffffff !important;
         }
 
         footer a:hover {
             text-decoration: underline;
         }
-
     </style>
 </head>
 
@@ -172,7 +191,7 @@
         <div class="profile">
             <img src="img/prajwal.jpg" alt="Prajwal Devaraj" class="profile-img">
             <div class="profile-details">
-                <h1>PRAJWAL DEVARAJ EDUCATION</h1>
+                <h1>PRAJWAL DEVARAJ PORTFOLIO</h1>
                 <p>
                     <a href="mailto:prajuu2004@gmail.com">prajuu2004@gmail.com</a> |
                     <a href="https://www.linkedin.com/in/prajuu2001/">LinkedIn</a> |
@@ -182,28 +201,28 @@
             </div>
         </div>
     </header>
-   
-    <div class="education">
-        <h2>Education</h2>
 
-        <div class="degree">Master of Science in Computer Science</div>
-        <div class="college"><a href="https://www.kent.edu/">Kent State University, Ohio, USA</a></div>
-        <div class="details">
-            Start Date: August 2025 <br>
-            End Date: May 2026 <br>
-            GPA: 4/4 <br>
-            Coursework: Advanced Database Systems Design, Data Mining, AI and Machine Learning, and IoT Integration
-        </div>
+    <div class="education-section">
+        <h2>EDUCATION</h2>
 
-        <div class="degree">Bachelor of Engineering in Computer Science</div>
-        <div class="college"><a href="https://jssateb.ac.in/">JSS Academy of Technical Education, Bangalore, India</a></div>
-        <div class="details">
-            Start Date: August 2019 <br>
-            End Date: June 2023 <br>
-            Visvesvaraya Technological University (VTU) Board <br>
-            CGPA: 8.25/10 <br>
-            Coursework: Data Structures and Algorithms, Big Data Analytics, Web Development, and Software Engineering
-        </div>
+        <p><b>Master of Science in Computer Science</b><br> 
+            <span>Start: August 2025 - End: May 2026</span><br>
+            <div class="college"><a href="https://www.kent.edu/">Kent State University, Ohio, USA</a></div><br>
+            <div class="details">
+                GPA: 4/4<br>
+                Coursework: <b>Advanced Database Systems Design</b>, <b>Data Mining</b>, <b>AI and Machine Learning</b>, <b>IoT Integration</b>
+            </div>
+        </p>
+
+        <p><b>Bachelor of Engineering in Computer Science</b><br>
+            <span>Start: August 2019 - End: June 2023</span><br>
+            <div class="college"><a href="https://jssateb.ac.in/">JSS Academy of Technical Education, Bangalore, India</a></div><br>
+            <div class="details">
+                VTU Board - <a href="https://vtu.ac.in/">Visvesvaraya Technological University (VTU)</a><br>
+                CGPA: 8.25/10<br>
+                Coursework: <b>Data Structures and Algorithms</b>, <b>Big Data Analytics</b>, <b>Web Development</b>, <b>Software Engineering</b>
+            </div>
+        </p>
     </div>
 
     <div class="buttons">
