@@ -46,8 +46,8 @@ Visit Portfolio
 Contact
 Feel free to reach out to me via email or LinkedIn for collaborations or inquiries.
 
-Email: prajuu2004@gmail.com
+Email: pdevaraj001@gmail.com
 LinkedIn: Prajwal Devaraj
-GitHub: prajwaldevaraj-2001
+GitHub: prajwal-devaraj
 License
 This portfolio is created for personal purposes. The content may not be reused without permission.
