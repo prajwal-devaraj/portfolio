@@ -48,6 +48,6 @@ Feel free to reach out to me via email or LinkedIn for collaborations or inquiri
 
 Email: pdevaraj001@gmail.com
 LinkedIn: Prajwal Devaraj
-GitHub: prajwal-devaraj
+GitHub: prajwal devaraj
 License
 This portfolio is created for personal purposes. The content may not be reused without permission.
